@@ -1,0 +1,5 @@
+docker run -it -d --name Abathur -v $HOME/:/root -p 3000:3000 python:2.7.13-slim python
+echo "une fois lancer le container Abathur, vas dans /root lance install.sh et puis lance exec.sh"
+docker cp install.sh Abathur:/root
+docker cp exec.py Abathur:/root
+docker cp exec.sh Abathur:/root
